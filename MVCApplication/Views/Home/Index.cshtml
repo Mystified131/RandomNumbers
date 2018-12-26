@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2><br />
+
+
+<p>This code generates random numbers between 0 and 9999.</p><br />
+
+<form action='Home/Result' method='POST' align="left">
+
+    <label>
+        Please enter the number of numbers to generate.
+    </label><br><br>
+        <input name="quant" type="text" value="" />
+    <br /><br />
+
+    <input type="submit" value="Generate Random Numbers" />
+
+</form>
