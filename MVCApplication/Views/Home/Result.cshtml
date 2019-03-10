@@ -6,6 +6,13 @@
 
 <h2>Result</h2>
 
+@if(Model.quant > 0)
+
+{
+
+<h4>Showing a total of @Model.quant  random numbers:</h4>
+
+
 @foreach(var element in Model.RandomNumbers)
 
 {
@@ -14,4 +21,9 @@
 
 }
 
+}
+
+<br />
+
+@ViewBag.error
 
